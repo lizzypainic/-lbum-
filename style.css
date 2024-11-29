@@ -1,86 +1,60 @@
-/* Definindo as cores principais do site */
-:root {
-    --starboy-blue: #1D3557;
-    --afterhours-red: #E63946;
-    --madness-gold: #D4AF37;
-    --background-dark: #212121;
-    --text-light: #ffffff;
+ody {
+    color: white;
+    background: black;
+    margin: 0px;
+    font-family: "Chakra Petch", sans-serif;
+    margin-bottom: 100px;
 }
 
-/* Estilos gerais do body */
-body {
-    background-color: var(--background-dark);
-    color: var(--text-light);
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-/* Cabeçalho */
 header {
-    background-color: var(--starboy-blue);
+    border-bottom: solid 2px rgb(42, 122, 228);
     padding: 20px;
-    text-align: center;
+    font-size: 32px;
+    color: rgb(42, 122, 228);
 }
 
-header h1 {
-    color: var(--text-light);
+.chamada {
+    background: rgb(184, 156, 213);
+    padding-bottom: 80px;
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
 }
 
-/* Navegação */
-nav ul {
-    list-style-type: none;
-    padding: 0;
+.chamada-texto {
+    margin-right: 5%;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
+h1 {
+    font-size: 40px;
 }
 
-nav a {
-    color: var(--text-light);
-    text-decoration: none;
-    font-weight: bold;
+p {
+    font-size: 20px;
 }
 
-nav a:hover {
-    color: var(--afterhours-red);
+.categoria-videos {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
 }
 
-/* Seções */
-section {
-    padding: 40px 20px;
-    margin: 20px 0;
+.categoria {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 50px;
 }
 
-section#introducao {
-    background-color: var(--afterhours-red);
+.categoria-videos img {
+    opacity: 0.5;
+    height: 200px;
 }
 
-section#albuns {
-    background-color: var(--madness-gold);
+.categoria-videos img:hover {
+    opacity: 1.0;
+    border: 3px solid green;
 }
 
-section#discografia {
-    background-color: var(--starboy-blue);
-}
-
-section#noticias {
-    background-color: var(--afterhours-red);
-}
-
-/* Imagens */
-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-/* Rodapé */
-footer {
-    text-align: center;
-    background-color: var(--starboy-blue);
-    padding: 10px;
-    color: var(--text-light);
+.categoria h2 {
+    color: rgb(42, 122, 228);
 }
