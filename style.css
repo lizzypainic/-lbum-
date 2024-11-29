@@ -1,0 +1,86 @@
+/* Definindo as cores principais do site */
+:root {
+    --starboy-blue: #1D3557;
+    --afterhours-red: #E63946;
+    --madness-gold: #D4AF37;
+    --background-dark: #212121;
+    --text-light: #ffffff;
+}
+
+/* Estilos gerais do body */
+body {
+    background-color: var(--background-dark);
+    color: var(--text-light);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçalho */
+header {
+    background-color: var(--starboy-blue);
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: var(--text-light);
+}
+
+/* Navegação */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: var(--text-light);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--afterhours-red);
+}
+
+/* Seções */
+section {
+    padding: 40px 20px;
+    margin: 20px 0;
+}
+
+section#introducao {
+    background-color: var(--afterhours-red);
+}
+
+section#albuns {
+    background-color: var(--madness-gold);
+}
+
+section#discografia {
+    background-color: var(--starboy-blue);
+}
+
+section#noticias {
+    background-color: var(--afterhours-red);
+}
+
+/* Imagens */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    background-color: var(--starboy-blue);
+    padding: 10px;
+    color: var(--text-light);
+}
